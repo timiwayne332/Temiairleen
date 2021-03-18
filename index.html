@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="javascript" href="./assets/js/index.js">
+ <title>
+   A trial of a log in portal
+  
+ </title>
+</head>
+<body>
+ 
+    <h1>
+      RESULT CHECKER
+    </h1>
+    <h2> <b> WELCOME SIGN IN TO CONTINUE </b> </h2>
+     <img src="./assets/image/architect.jpg" width="100%" height="500em">
+     
+<!--- work on slide show -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOG IN </button>
+    
+    <div id="id01" class="modal">
+       
+      <form class="modal-content animate" action="result.html">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./assets/image/avatar1.png
+          " alt="Avatar" class="avatar">
+        </div>
+                <!--Nav bar-->
+        <div class="container">
+          <label for="name"><b> </b> First Name</label>
+          <input type="text" placeholder="Enter Name" name="uname" required minlength="4" maxlength="30">
+
+          <label for="psw"><b>Matric Number</b></label>
+          <input type="password" placeholder=" Enter Matric Number" name="psw" required minlength="9" maxlength="20">
+
+          <label for="psw"><b>Password</label></b></label>
+          <input type="Password" placeholder=" Input password" name="psw"
+          required minlength="10" maxlength="20">
+      
+          <button type="submit"> <strong>Submit </strong> <a href="./result.html"></a></button> 
+          
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          
+        </div>
+      </form>
+    </div>
+    <script>
+      var modal =document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target== modal){
+        modal.style.display="none";
+    }
+}
+
+
+    </script>
+     
+    </body>
+    
